@@ -7,15 +7,12 @@
 
 <body>
     <script>
-        var b = 0;
-        var c= 0;
-        for(var a = 1; a <= 10; a++){
-            if(a % 2 != 0){
-                document.write(a + "<br>");
-            }
-            c = b + a;
-        }
-        document.write(" Total sum :" + c);
+        var array = [1, 2, 3, 4, 5];
+        var sum = array.reduce(function(a, b){
+            return a + b;
+        }, 0);
+
+        console.log(sum);
     </script>
 </body>
 
