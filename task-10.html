@@ -5,15 +5,26 @@
 </head>
 <body>
     <script>
-        for (var a = 1; a <= 5; a++){
-            for (var c = a; c <= 5; c--){
-                document.write(" ");
+        for (var a = 1; a <= 3; a++) {
+            for (var b = 3; b >= a; b--){
+                document.write("&nbsp;");
             }
-            for(var b = a; b >= 1; b++){
-                document.write("");
-            }           
-            document.write(a);
+            for (var c = 1; c <= a; c++){
+                document.write(" *");
+            }
+            document.write("<br>");
         }
+
+        for(var i = 2; i >= 1; i--){
+            for(var k = 2; k >= i; k--){
+                document.write("&nbsp;&nbsp;");
+            }
+            for(var j = 1; j <= i; j++){
+                document.write(" *");
+            }
+            document.write("<br>");
+        }
+
     </script>
 </body>
 </html>
