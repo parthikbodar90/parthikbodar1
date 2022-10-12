@@ -7,18 +7,19 @@
 
 <body>
     <script>
+        var n=4;
         for(var a = 1; a <= 7; a++){
             if(a % 2 != 0){
-                for(var c = 1; c <= 4; c++){
-                    document.write();
+                for(var c = 1; c <= n; c++){    
+                    document.write("&nbsp;&nbsp;&nbsp;");
                 }
                 for(var b = 1; b <= a; b++){    
                     document.write(" *");
                 }
                 document.write("<br>");
-                
+                n--; 
             }
-            
+          
         }
     
     </script>
